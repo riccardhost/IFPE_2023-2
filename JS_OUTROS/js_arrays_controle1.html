@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAVA SCRIPT: ARRAYS - Sistema de Controle de Produtos 1</title>
+</head>
+<body>
+
+  <script>
+    let produtos = [];
+    let opcao = 0;
+    
+    while (opcao != 3) {
+      opcao = parseInt(prompt("ESCOLHA UMA OPÇÃO:\n\n1 - CADASTRAR;\n2 - LISTAR;\n3 - FINALIZAR!"));
+    
+      switch (opcao) {
+        case 1:
+          let produto = prompt("Digite o nome do produto: ");
+          while (produto == "") {
+            produto = prompt("Digite o nome do produto: ");
+          }
+          produtos.push(produto);
+          break;
+        case 2:
+          console.log(produtos);
+          break;
+        case 3:
+          console.log("PROGRAMA FINALIZADO!");
+          break;
+        default:
+          console.log("OPÇÃO INVÁLIDA!");
+          break;
+      }
+    }
+  </script>
+
+</body>
+</html>
