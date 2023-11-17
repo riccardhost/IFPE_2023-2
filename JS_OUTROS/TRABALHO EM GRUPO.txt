@@ -1,0 +1,15 @@
+
+Sistema de Controle de Produtos 1
+
+Sua equipe está produzindo um sistema de controle de produtos para um supermercado.
+Deve ser exibido para o usuário, um menu com as seguintes opções: (utilize a função prompt e \n para quebra de linha)
+
+- 1 - Cadastrar produto;
+- 2 - Listar produtos;
+- 3 - Finalizar programa.
+
+Ao selecionar o cadastrar, deve ser possível indicar o nome do produto.
+Já a funcionalidade listar produtos deve exibir a lista de todos os produtos cadastrados (utilizar o console.log).
+Ao escolher a opção 3, o programa é finalizado.
+
+Após utilizar as funcionalidades 1 ou 2, o programa deve exibir o menu novamente.
