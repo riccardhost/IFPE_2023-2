@@ -1,5 +1,41 @@
-<script>
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT - AULA 04: ARRAY DE ARRAYS</title>
+</head>
+<body>
+    <script>
 
-    
+    // Cria uma matriz 5x5 com todos os elementos iguais a 1, exceto um elemento que deve ser 0.
 
-</script>
+    const matrix = Array.from({ length: 5 }, () => Array.from({ length: 5 }, () => 1));
+    const randomRow = Math.floor(Math.random() * 5);
+    const randomCol = Math.floor(Math.random() * 5);
+    matrix[randomRow][randomCol] = 0;
+
+    // Cria uma função que permite ao usuário adivinhar as coordenadas do navio.
+
+    function guessShip() {
+    const row = parseInt(prompt("Digite a linha (0-4):"));
+    const col = parseInt(prompt("Digite a coluna (0-4):"));
+
+    // Verifica se as coordenadas fornecidas pelo usuário correspondem às coordenadas do navio.
+
+    if (row === randomRow && col === randomCol) {
+        alert("Parabéns! Você acertou!");
+    } else {
+        alert("Que pena! Tente novamente.");
+    }
+    }
+
+    // Permite que o usuário tente adivinhar as coordenadas do navio três vezes.
+
+    for (let i = 0; i < 3; i++) {
+    guessShip();
+    }
+
+    </script>
+</body>
+</html>
