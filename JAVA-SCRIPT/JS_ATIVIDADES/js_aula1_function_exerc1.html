@@ -1,0 +1,91 @@
+
+
+<!--- EXEMPLO 1 SIMPLES DE FUNÇÃO-->
+
+<script>
+/*
+// Função para adição
+function adicionar(a, b) {
+    return a + b;
+}
+
+// Função para subtração
+function subtrair(a, b) {
+    return a - b;
+}
+
+// Função para multiplicação
+function multiplicar(a, b) {
+    return a * b;
+}
+
+// Função para divisão
+function dividir(a, b) {
+    if (b !== 0) {
+        return a / b;
+    } else {
+        return "Erro: Divisão por zero!";
+    }
+}
+
+// Exemplo de uso
+const valor1 = 10;
+const valor2 = 5;
+
+console.log(`Adição: ${adicionar(valor1, valor2)}`);
+console.log(`Subtração: ${subtrair(valor1, valor2)}`);
+console.log(`Multiplicação: ${multiplicar(valor1, valor2)}`);
+console.log(`Divisão: ${dividir(valor1, valor2)}`);
+
+</script>
+
+<script>
+
+function adicionar(a, b) {
+    return a + b;
+}
+
+function subtrair(a, b) {
+    return a - b;
+}
+
+function multiplicar(a, b) {
+    return a * b;
+}
+
+function dividir(a, b) {
+    if (b !== 0) {
+        return a / b;
+    } else {
+        return "Erro: Divisão por zero!";
+    }
+}
+
+function calculadora() {
+    const valor1 = parseFloat(prompt("Digite o primeiro valor:"));
+    const valor2 = parseFloat(prompt("Digite o segundo valor:"));
+    const operacao = prompt("Digite a operação ( + , - , * , / ):");
+
+    switch (operacao) {
+        case "+":
+            document.write(`Resultado: ${adicionar(valor1, valor2)}`);
+            break;
+        case "-":
+            document.write(`Resultado: ${subtrair(valor1, valor2)}`);
+            break;
+        case "*":
+            document.write(`Resultado: ${multiplicar(valor1, valor2)}`);
+            break;
+        case "/":
+            document.write(`Resultado: ${dividir(valor1, valor2)}`);
+            break;
+        default:
+            document.write("Operação inválida. Tente novamente.");
+    }
+}
+
+// Chame a função para iniciar a calculadora
+calculadora();
+
+</script>
+
